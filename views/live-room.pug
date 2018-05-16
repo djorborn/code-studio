@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    style#css
+    script.
+      var script = document.createElement('script')
+      script.async = true
+      document.head.appendChild(script)
+      script.innerHTML = `window.onload = function(){
+        ${window.sessionStorage.getItem('js')}
+      }`
+      document.getElementById('css').innerHTML = window.sessionStorage.getItem('css')
+      
+      
+    body
+      
+      script.
+        document.getElementsByTagName('body')[0].innerHTML = window.sessionStorage.getItem('html')
+                  

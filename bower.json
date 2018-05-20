@@ -1,0 +1,17 @@
+{
+  "name": "code-studio",
+  "description": "live front end code editor",
+  "main": "app.js",
+  "authors": [
+    "Daniel Osborn <djorborn@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

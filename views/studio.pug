@@ -1,22 +1,21 @@
 doctype html
 html
-  head
-    title Code Studio
-    link(rel="stylesheet" href="css/main.style.css")
-    each href in styles
-      link(rel="stylesheet" href=href)
-    each src in scripts
-      script(src=src)
-  body
-    .studio-wrapper
-      .bar
-      .control-room-wrapper
+    include includes/studio-head
+    body
+      .studio-wrapper
+        .bar
+          .area.left
+            div
+              .title Cool Track
+          .area.right
+            .menu
+              a(href="/new") New Track
+              a(href="#settings") Settings
+              a(href="/dash") Dashboard
         .control-room
           .editor#html
           .editor#css
           .editor#js
-      .live-room-wrapper
         .live-room
-          iframe#liveRoom(src="/preview")
-    script(src="/js/studio.js")
-    script(src="/js/main.client.js")
+          iframe(src="/preview" width="100%" height="100%")
+      script(src="/main.js")

@@ -1,0 +1,77 @@
+
+$bar-height: 35px;
+$theme: #292A2B;
+$bar-background: $theme + #000;
+$title-color: $theme + #aaa;
+$bar-text-color: #ccc;
+$live-room-height: calc(50vh - $bar-height);
+
+body * {box-sizing: border-box;}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+
+.studio-wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.bar {
+  height: $bar-height;
+  background-color: $bar-background;
+  display: flex;
+  .area {
+    margin: auto;
+    float: left;
+    height: $bar-height;
+    display: block;
+    font-size: 23px;
+    text-align: left;
+    line-height: 25px;
+    padding: 5px;
+    .title {
+        color: $title-color;
+        cursor: pointer;
+    }
+  }
+  .area.left {
+    width: 30%;
+    text-align: left;
+  }
+  .area.right {
+    text-align: right;
+    width: 70%;
+    a {
+      text-decoration: none;
+      padding: 0 7px;
+      color: $bar-text-color;
+      font-size: 18px;
+      &:hover {
+        text-decoration: line-through #ff0;
+      }
+    }
+  }
+}
+.control-room {
+  display: flex;
+  height: 50vh;
+  .editor {
+    margin: auto;
+    width: 33.33%;
+    height: 50vh;
+    border: solid 1px $theme + #111;
+    .CodeMirror {
+      font-size: 14px;
+      height: 100%;
+    }
+  }
+}
+
+.live-room {
+  height: calc(50vh - 30px);
+  iframe {
+    border: hidden;
+  }
+}

@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    style#style
+    script#script(async="true")
+    script
+      include includes/preview.js
+  body
+    
+    script.
+      document.body.innerHTML = window.sessionStorage.getItem('html')

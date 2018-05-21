@@ -56,6 +56,12 @@ export default function (app) {
         precompile: true,
         outputStyle: 'compressed'
     }));
+    app.get('/dash.css', sass({
+        file: './client/src/dash.scss',
+        watch: true,
+        precompile: true,
+        outputStyle: 'compressed'
+    }));
     // BOWER COMPONENT STATIC PATH
     app.use('/bower_components', express.static(
         path.join(process.cwd(), 'bower_components')

@@ -24,6 +24,7 @@
     "pug": "^2.0.3",
     "reload": "^2.2.2",
     "sequelize": "^4.37.8",
+    "skeleton-sass-official": "^3.1.5",
     "uniqid": "^4.1.1"
   },
   "devDependencies": {

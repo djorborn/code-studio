@@ -1,6 +1,11 @@
 import head from './../lib/head';
 import uniqid from 'uniqid';
 
+/*
+** Apis are mixed with routes because I am
+** rendering some routes with content
+*/
+
 export default function (app, User, Track) {
     // Render Track, Render Empty Studio or Get New Id
     app.get('/', (req, res) =>{
@@ -90,6 +95,23 @@ export default function (app, User, Track) {
     });
 
     // DASHBOARD CALLS
+
+    // app.get('/dash', (req, res) => {
+    //     User.findOne({
+    //         where: {
+    //             githubId: req.user.githubId
+    //         }
+    //     }).then(user => {
+    //         if (!user) {
+    //             res.redirect('/error')
+    //         } else {
+    //             res.render('dash', {
+    //                 name:
+    //             })
+    //         }
+    //     })
+    // })
+
     app.post('/get-user-tracks', (req, res) => {
         Track.sync({force: false}).then(() => {
             Track.findAll({where: {userId: req.user.githubId}})

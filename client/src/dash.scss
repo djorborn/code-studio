@@ -1,0 +1,100 @@
+body * {
+  box-sizing: border-box;
+}
+/* Code Studio Dashboard Stylesheet */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+/* Grid Template */
+.top-bar-wrapper {
+  grid-area: top-bar;
+}
+
+.side-bar-wrapper {
+  grid-area: side-bar;
+}
+
+.content-wrapper {
+  grid-area: content-wrapper;
+}
+
+.dash-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 'top-bar top-bar top-bar top-bar top-bar top-bar' 'side-bar content-wrapper content-wrapper content-wrapper content-wrapper content-wrapper' 'side-bar content-wrapper content-wrapper content-wrapper content-wrapper content-wrapper';
+  padding: 10px;
+}
+/* All Wrapper Styles */
+.content-wrapper,
+.side-bar-wrapper,
+.top-bar-wrapper {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 5px 0;
+  position: relative;
+}
+/* Top Bar Wrapper Styles */
+.top-bar-wrapper {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Side Bar Wrapper Styles */
+.side-bar-wrapper {
+  height: calc(100vh - 170px);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.side-bar-wrapper .image {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  background: #333;
+}
+/* Top Bar Wrapper Styles */
+.top-bar-wrapper a {
+  font-size: 16px;
+  margin: 0 1vw;
+  cursor: pointer;
+}
+
+.top-bar-wrapper a:hover {
+  /*     */
+}
+/* Content Wrappper Styles */
+.content-wrapper {
+  height: calc(100vh - 170px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*    background: blueviolet; */
+}
+
+.frame {
+  flex: auto;
+  width: 300px;
+  height: 300px;
+  background: yellowgreen;
+  margin: 1vw;
+  cursor: pointer;
+}

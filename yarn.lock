@@ -2327,6 +2327,10 @@ normalize-path@^2.0.0, normalize-path@^2.0.1:
   dependencies:
     remove-trailing-separator "^1.0.1"
 
+normalize-scss@>=5.0.4:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/normalize-scss/-/normalize-scss-7.0.1.tgz#74485e82bb5d0526371136422a09fdb868ffc1a4"
+
 npm-bundled@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/npm-bundled/-/npm-bundled-1.0.3.tgz#7e71703d973af3370a9591bafe3a63aca0be2308"
@@ -3078,6 +3082,12 @@ shimmer@^1.1.0:
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
+
+skeleton-sass-official@^3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/skeleton-sass-official/-/skeleton-sass-official-3.1.5.tgz#105b0c3749a279a0e44254f748c3b3da081b8ac0"
+  dependencies:
+    normalize-scss ">=5.0.4"
 
 slash@^1.0.0:
   version "1.0.0"
